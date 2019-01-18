@@ -18,7 +18,7 @@ export default (code, Router, { localhost = "localhost" } = {}) => Page => {
 
     componentDidMount() {
       // check if it should track
-      const shouldNotTrack = || isDev();
+      const shouldNotTrack = isDev();
       // check if it should use production or dev analytics
       const analytics = shouldNotTrack ? devLytics : prodLytics;
 
